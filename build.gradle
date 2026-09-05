@@ -16,7 +16,7 @@ repositories {
 
 javafx {
     version = '17.0.7'
-    modules = [ 'javafx.controls' ]
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 application {
