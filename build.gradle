@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
     id 'com.gradleup.shadow' version '9.5.1'
 }
 
@@ -13,8 +14,13 @@ repositories {
     mavenCentral()
 }
 
+javafx {
+    version = '17.0.7'
+    modules = [ 'javafx.controls' ]
+}
+
 application {
-    mainClass.set("Duke")
+    mainClass.set("Launcher")
 }
 
 java {
